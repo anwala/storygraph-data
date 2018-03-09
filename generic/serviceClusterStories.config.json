@@ -1,0 +1,71 @@
+{
+	"jobs":
+	[
+		{
+			"config": "polar-media-consensus-graph/config.json"
+		}
+	],
+	"old-jobs":
+	[
+		{
+			"config": "polar-media-consensus-graph/config.json"
+		},
+		{
+			"config": "news-story-graph/config.json"
+		},
+		{
+			"config": "zimdars-list-graph/config.json"
+		}
+	],
+	"default-config":
+	{
+		"name": "generic-graph",
+		"history-count": 1440,
+		"sleep-seconds": 600,
+		"debug-flag": false,
+		"censor-flag": false,
+		"cache-html-flag": false,
+		"annotator": "event-cluster",
+		"output-folder": "static/graphs/generic-graph/",
+
+		"entity-parameters":
+		{
+			"add-title-class": true,
+			"add-top-k-terms-flag": 10,
+			"thread-pool-count": 5
+		},
+		"graph-parameters":
+		{
+			"graph-building-thresholds":
+			{
+				"similarity-metric": "weighted-jaccard-overlap", 
+				"jaccard-weight": 0.30
+			},
+			"event-thresholds":
+			{
+				"min-avg-degree": 3, 
+				"min-unique-source-count": 3
+			},
+			"max-iterations": 100,
+			"min-sim": 0.30
+		},
+		"feed-parameters":
+		{
+			"max-extract-links-count": 5,
+			"feeds":
+			[
+				{"rss": "http://feeds.bbci.co.uk/news/rss.xml"},
+				{"rss": "http://rss.cnn.com/rss/cnn_topstories.rss"},
+				{"rss": "http://feeds.foxnews.com/foxnews/latest"},
+				{"rss": "http://www.npr.org/rss/rss.php?id=1001"},
+				{"rss": "http://feeds.nytimes.com/nyt/rss/HomePage"},
+				{"rss": "http://feeds.reuters.com/reuters/topNews"},
+				{"rss": "http://www.aljazeera.com/xml/rss/all.xml"},
+				{"rss": "http://rssfeeds.usatoday.com/usatoday-NewsTopStories"},
+				{"rss": "https://www.boston.com/feed"},
+				{"rss": "http://feeds.washingtonpost.com/rss/politics"},
+				{"rss": "http://feeds.washingtonpost.com/rss/world"}
+			]
+		}
+	}
+}

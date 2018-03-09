@@ -1,0 +1,88 @@
+{
+	"name": "polar-media-consensus-graph",
+	"annotation": "event-cluster",
+	"debug-flag": false,
+	"censor-flag": false,
+	"feed-parameters":
+	{
+		"max-extract-links-count": 5,
+		"feeds":
+		[
+			{
+				"rss": "http://www.politicususa.com/feed",
+				"custom": {"node-details": {"type": "left", "color": "blue", "annotation": "polarity"}}
+			},
+			{
+				"rss": "https://www.vox.com/rss/index.xml",
+				"custom": {"node-details": {"type": "left", "color": "blue", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://www.huffingtonpost.com/section/front-page/feed",
+				"custom": {"node-details": {"type": "left", "color": "blue", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://www.msnbc.com/feeds/latest",
+				"custom": {"node-details": {"type": "left", "color": "blue", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+				"custom": {"node-details": {"type": "left", "color": "blue", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://feeds.washingtonpost.com/rss/politics",
+				"custom": {"node-details": {"type": "left", "color": "blue", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://rss.cnn.com/rss/cnn_topstories.rss",
+				"custom": {"node-details": {"type": "center", "color": "mediumorchid", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://www.politico.com/rss/politics.xml",
+				"custom": {"node-details": {"type": "center", "color": "mediumorchid", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://abcnews.go.com/abcnews/topstories",
+				"custom": {"node-details": {"type": "center", "color": "mediumorchid", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://thehill.com/rss/syndicator/19109",
+				"custom": {"node-details": {"type": "center", "color": "mediumorchid", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://feeds.feedburner.com/realclearpolitics/qlMj",
+				"custom": {"node-details": {"type": "center", "color": "mediumorchid", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://www.washingtonexaminer.com/rss/news",
+				"custom": {"node-details": {"type": "right", "color": "red", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://feeds.foxnews.com/foxnews/latest",
+				"custom": {"node-details": {"type": "right", "color": "red", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://feeds.feedburner.com/dailycaller",
+				"custom": {"node-details": {"type": "right", "color": "red", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://conservativetribune.com/feed/",
+				"custom": {"node-details": {"type": "right", "color": "red", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://feeds.feedburner.com/breitbart",
+				"custom": {"node-details": {"type": "right", "color": "red", "annotation": "polarity"}}
+			},
+			{
+				"rss": "http://www.thegatewaypundit.com/feed/",
+				"custom": {"node-details": {"type": "right", "color": "red", "annotation": "polarity"}}
+			}
+		],
+		"old-feeds":
+		[
+			{
+				"rss": "https://www.dailykos.com/user/main/rss.xml",
+				"custom": {"node-details": {"type": "left", "color": "blue", "annotation": "polarity"}}
+			}
+		]
+	}
+}
